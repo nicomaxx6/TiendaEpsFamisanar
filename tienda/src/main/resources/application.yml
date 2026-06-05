@@ -1,0 +1,37 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: tienda
+  datasource:
+    url: jdbc:mysql://localhost:3306/db_tienda_management
+    driverClassName: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 'root'
+    hikari:
+      initialization-fail-timeout: 60000
+      connection-timeout: 30000
+      maximum-pool-size: 10
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+    properties:
+      hibernate:
+        physical_naming_strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+
+info:
+  app:
+    name: "Tienda"
+    description: "proyecto para gestionar stock de tienda"
+    version: "1.0"
+
+springdoc:
+  api-docs:
+    enabled: true
+    path: "/api-docs"
+
+logging:
+  level:
+    org.springframework.cache: TRACE
