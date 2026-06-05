@@ -1,6 +1,6 @@
 # Sistema de Gestión de Tienda - Backend API
 
-Este proyecto consiste en una API REST robusta desarrollada bajo el ecosistema de **Spring Boot** para gestionar el inventario, procesar ventas con cálculo dinámico de impuestos (IVA), reabastecer stock bajo alertas críticas y exponer un tablero de estadísticas comerciales en tiempo real.
+Este proyecto consiste en una API REST desarrollada bajo el ecosistema de **Spring Boot** para gestionar el inventario, procesar ventas con cálculo dinámico de impuestos (IVA), reabastecer stock bajo alertas críticas y exponer un tablero de estadísticas comerciales en tiempo real.
 
 ---
 
